@@ -1,0 +1,19 @@
+home
+jobs
+contact
+accounts
+
+
+models ===> views =====>templates
+models :
+    create Database
+    Table ==>Jobs
+
+Jobs 
+    -title
+    -JobTybe
+    -Experince
+    -Vacancy
+    -Salary
+    -Category
+    -Description

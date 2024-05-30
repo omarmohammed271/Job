@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ bradcam_area  -->
+
+    <div class="job_details_area">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 mx-auto">
+                    <div class="job_sumary">
+                        <div class="summery_header">
+                            <h3>Profile</h3>
+                            <img src="{{pro.image.url}}" alt="pic">
+                        </div>
+                        <div class="job_content">
+                            <ul>
+                                <li>Name: <span>{{pro}}</span></li>
+                                <li>Email: <span>{{pro.user.email}}</span></li>
+                                <li>Phone: <span>{{pro.phone}}</span></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <button href="{% url 'accounts:profile_edit' %}" class="boxed-btn3 w-100" type="submit">Edit Profile </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<div class="thumb">
+    <img src="img/svg_icon/1.svg" alt="">
+</div>
